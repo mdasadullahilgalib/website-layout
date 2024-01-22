@@ -4,13 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
+    <script src="https://kit.fontawesome.com/5cfd66e941.js" crossorigin="anonymous"></script>
+   
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        nav a{
+            text-decoration: none;
+            color: black;
+            margin-right: 10px;
+        }
+        .login-container{
+            
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+          
+        }
+        .login-form{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+        .login-form input{
+            margin-top: 1em;
+            font-size: 1.5em;
+            padding: 5px 10px;
+
+        }
+        .login-form input[type="submit"]{
+            background-color: goldenrod;
+            border: 0;
+            border-radius: 5px;
+            color: whitesmoke;
+            font-weight: 700;
+        }
+
+    </style>
 </head>
 <body>
-    <form  class="login-form">
-        <h3>Please login</h3>
-        <input type="email" name="" id="" placeholder="Your Email" required>
-        <input type="password" name="" id="" placeholder="Your password" required>
-        <input type="submit" value="Login">
-    </form>
+    <header>
+        <nav>
+            <samp>
+                <a href="">Home</a>
+                <a href="">Dasebord</a>
+                <a href="">Invontory</a>
+            </samp>
+            <samp>
+                <a href=""><i class="fa-solid fa-right-from-bracket"></i></a>
+                <a href=""><i class="fa-solid fa-user"></i></a>
+            </samp>
+        </nav>
+    </header>
+    <section class="login-container">
+        <form  class="login-form">
+            <h2>Please login</h2>
+            <input type="email" name="" id="" placeholder="Your Email" required>
+            <input type="password" name="" id="" placeholder="password" required>
+            <input type="submit" value="Login">
+        </form>
+    </section>
 </body>
 </html>
